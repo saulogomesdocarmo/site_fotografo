@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'bebas';
+    src: url('BebasNeue-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --font-font:'bebas','sans-serif';
+
+}
+h1{
+    font-family:var(--font-texto) ;
+}

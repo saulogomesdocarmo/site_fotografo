@@ -1,15 +1,28 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'bebas';
-    src: url('BebasNeue-Regular.ttf') format('opentype');
+    font-family: 'RomauntGaolines';
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
 }
 
 :root{
-    --font-font:'bebas','sans-serif';
+   --font-titulo:'RomauntGaolines','display';
+   --font-texto:'Montserrat','sans-serif';
 
 }
-h1{
-    font-family:var(--font-texto) ;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('img/foto-home.jpg');
 }

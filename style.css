@@ -12,11 +12,73 @@
     font-weight: normal;
 }
 
-:root{
-   --font-titulo:'RomauntGaolines','display';
-   --font-texto:'Montserrat','sans-serif';
-
+@font-face {
+    font-family:'Poppins' ;
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
+:root{
 
+    --preto:#000000;
+    --branco:#ffffff;
 
+   --font-titulo:'RomauntGaolines','display';
+   --font-texto01:'Montserrat','sans-serif';
+   --font-texto02:'Poppins','sans-serif';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: var(--preto);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+}
+
+header > p {
+    color: var(--branco);
+    font-family: var(--font-texto02);
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+
+nav{
+    text-align: center;
+    background-color: var(--preto);
+    padding: 20px 0px;
+    
+}
+
+nav a{
+    font-family: var(--font-texto01);
+    color: var(--branco);
+    margin: 0px 20px;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: medium;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+
+    margin: auto;
+    margin-top: 50px;
+
+    background-color: rgb(177, 177, 177);
+}
+
+main > img{
+    width: 100%;
+}
